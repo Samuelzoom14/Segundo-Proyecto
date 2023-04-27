@@ -15,3 +15,31 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*Css Emi*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/*estilos de imagen de fondo*/
+.ubiboton{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);    
+}
+@media (max-width: 767px) {
+    .displayNone{
+        display: none;
+    }
+    .columna{
+        flex-direction: column;
+    }
+        
+}
+.posicion{
+    position: relative;
+}
+  
