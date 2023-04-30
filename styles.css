@@ -43,14 +43,9 @@
     position: relative;
 }
 /*CSS MANU PAG NOSOTROS*/
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
 
 .cine{
-    background-image:url(./imagenes/cine.jpg);
+    background-image:url(./img/cine.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
