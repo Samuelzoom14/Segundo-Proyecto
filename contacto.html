@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles_contacto.css">
+  <script src="https://kit.fontawesome.com/d106db4229.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img src="./img/photo-1593005510329-8a4035a7238f.jpeg" width="50" height="50"
+            class=" LogoPeliculas d-inline-block align-top img-rounded m-2" alt="" style="border-radius: 50%;" alt="">
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarDark">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Documentales</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">5</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vuelos.html">Otros</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#login">
+                    Iniciar sesion
+                </button>
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <form>
+                                  <div class="form-outline mb-4">
+                                    <input type="email" id="mail" class="form-control" placeholder="usuario@gmail.com" />
+                                    <label class="form-label" for="mail">Usuario</label>
+                                  </div>
+                                  <div class="form-outline mb-4">
+                                    <input type="password" id="contraseña" class="form-control" />
+                                    <label class="form-label" for="contraseña">Contraseña</label>
+                                  </div>
+                                  <div class="row mb-4">
+                                    <div class="col d-flex justify-content-center">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
+                                        <label class="form-check-label" for="recordarme"> Recordarme </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <a href="error404.html">Olvidaste la contraseña?</a>
+                                    </div>
+                                  </div>
+                                  <div class="d-grid">
+                                      <button type="button" class="btn btn-primary btn-block mb-4">Iniciar sesion</button>
+                                  </div>
+                                  <div class="text-center">
+                                    <p>No eres miembro? <a href="registro.html" target="_blank">Registrate</a></p>
+                                    <p>o registrate con:</p>
+                                      <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-facebook-f"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-google"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-twitter"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-github"></i>
+                                      </button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+  <section>
+    <div class="text-light my-4">
+      <p class="fondo">¡Contactate con Nosotros!</p>
+    </div>
+  </section>
+  <section class="register-background d-flex justify-content-center align-items-center p-5">
+    <form class="formin  ">
+      <h5 class="text-center">Formulario de contacto </h5>
+      <label class="colore" for="nombres"> ingrese su usuario (en caso de tener) <nombre>
+          <input class="controls" type="text" name="nombres" id="nombres" placeholder="JuanPedro20">
+      </label>
+      <label class="colore" for="Apellidos"> Ingresa tu Nombre/s y Apellido/s
+        <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Juan Pérez">
+      </label>
+      <label class="colore" for="email"> Ingresa tu Mail
+        <input class="controls" type="email" name="email" id="email" placeholder="juanpedroperez@gmail.com">
+      </label>
+      <label class="colore" for="text"> Ingresa tu consulta
+        <input class="controls" type="text" name="consulta" id="Contraseña">
+      </label>
+      <p>
+        <input type="checkbox" name="recordarusuario" id="recordarusuario">
+        Estoy de acuerdo con las <a href=""> Poíticas de Privacidad </a>
+      </p>
+      <input class="botons" type="submit" value="Registrar">
+    </form>
+  </section>
+  <section>
+    <div class="d-flex justify-content-center mx-5">
+      <p class="text-light letra">Encontranos en nuestra sede ubicada en San Martín 1874, Casilda, Santa Fe</p>
+    </div>
+    <div class="d-flex justify-content-center my-4 container"><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11467.81091730366!2d-61.181541835021626!3d-33.044160282187455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b62d46f30b3c3b%3A0xa4d3b34c73337796!2sSemiller%C3%ADa%20San%20Mart%C3%ADn!5e1!3m2!1ses!2sar!4v1682460311778!5m2!1ses!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"> </iframe> </div>
+  </section>
+  <footer style="background-color: #212529">
+    <ul class="nav nav-pills nav-fill container-fluid p-3 columna">
+      <li class="nav-item ">
+        <a 
+          href="http://" 
+          style="text-decoration: none;color: white; width: auto;height: 30px; "class="btn btn-sm btn-outline-secondary">
+          <p>Preguntas frecuentes</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white;">
+          <p>Privacidad</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white;">
+          <p>Prueba de velocidad</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white;">
+          <p>Centro de ayuda</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white">
+          <p>Empleo</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white">
+          <p>Avisos legales</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a 
+          href="http://"
+          style="text-decoration: none;color: white">
+          <p>Cuenta</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none; color: white">
+          <p>Formas de ver</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none; color: white;">
+          <p>Incformacion corporativa</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a 
+          href="http://"
+          style="text-decoration: none; color: white;">
+          <p>Prensa</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none; color: white;">
+          <p>Terminos de uso</p>
+        </a>
+        <a 
+          href="http://"
+          style="text-decoration: none; color: white;">
+          <p>Contactanos</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav justify-content-center"><!--seccion logos-->
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="3" y="5" width="18" height="14" rx="4" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
