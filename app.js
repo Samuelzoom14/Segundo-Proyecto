@@ -27,5 +27,6 @@ form.addEventListener("submit", e=>{
     }
     else{
         parrafo.innerHTML = "Enviado"
+        window.location = "index.html"
     }
 })
