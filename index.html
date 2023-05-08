@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!--=====================================SECTION NAV================================-->  
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img src="./img/photo-1593005510329-8a4035a7238f.jpeg" width="50" height="50"
-          class=" LogoPeliculas d-inline-block align-top img-rounded m-2" alt="" style="border-radius: 50%;" alt="">
-          
-        </a>
+        <a class="navbar-brand">
+          <img src="./img/logo.jpg" width="40" height="30"
+          class=" LogoViajeros d-inline-block align-top" alt="Logo">
+          PelisCode</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,83 +32,70 @@
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Documentales</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1</a></li>
-                <li><a class="dropdown-item" href="#">2</a></li>
-                <li><a class="dropdown-item" href="#">3</a></li>
-                <li><a class="dropdown-item" href="#">4</a></li>
-                <li><a class="dropdown-item" href="#">5</a></li>
-              </ul>
-            </li>
             <li class="nav-item" id="adminSection">
               <a class="nav-link" href="">Administrador</a>
             </li>
           </ul>
           <form class="d-flex">
               <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#login">
-                  Iniciar sesion
+                  Inicio de sesion
               </button>
-            </div>
-          </div>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!--=====================================SECTION IMG ===============================-->
-    
-    <header><div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="form-outline mb-4">
-                        <input type="email" id="mail" class="form-control" placeholder="usuario@gmail.com" required/>
-                        <label class="form-label" for="mail">Usuario</label>
-                      </div>
-                      <div class="form-outline mb-4">
-                        <input type="password" id="contraseña" class="form-control" required/>
-                        <label class="form-label" for="contraseña">Contraseña</label>
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col d-flex justify-content-center">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
-                            <label class="form-check-label" for="recordarme"> Recordarme </label>
+                  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-outline mb-4">
+                                        <input type="email" id="mailModal" class="form-control" placeholder="usuario@gmail.com" required/>
+                                        <label class="form-label" for="mail">Usuario</label>
+                                      </div>
+                                      <div class="form-outline mb-4">
+                                        <input type="password" id="passwordModal" class="form-control" required/>
+                                        <label class="form-label" for="contraseña">Contraseña</label>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col d-flex justify-content-center">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
+                                            <label class="form-check-label" for="recordarme"> Recordarme </label>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <a href="./error404/index.html">Olvidaste la contraseña?</a>
+                                        </div>
+                                      </div>
+                                      <div class="d-grid">
+                                          <button type="button" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
+                                      </div>    
+                                      <div class="text-center">
+                                        <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
+                                        <p>o registrate con:</p>
+                                          <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-facebook-f"></i>
+                                          </button>
+                                          <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-google"></i>
+                                          </button>
+                                          <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-twitter"></i>
+                                          </button>
+                                          <button type="button" class="btn btn-link btn-floating mx-1">
+                                              <i class="fab fa-github"></i>
+                                          </button>
+                                      </div>
+                                  </form>
+                              </div>
                           </div>
-                        </div>
-                        <div class="col">
-                          <a href="../Segundo-Proyecto/error404/index.html">Olvidaste la contraseña?</a>
-                        </div>
                       </div>
-                      <div class="d-grid">
-                          <button type="submit" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
-                      </div>
-                      <div class="text-center">
-                        <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
-                        <p>o registrate con:</p>
-                          <button type="button" class="btn btn-link btn-floating mx-1">
-                              <i class="fab fa-facebook-f"></i>
-                          </button>
-                          <button type="button" class="btn btn-link btn-floating mx-1">
-                              <i class="fab fa-google"></i>
-                          </button>
-                          <button type="button" class="btn btn-link btn-floating mx-1">
-                              <i class="fab fa-twitter"></i>
-                          </button>
-                          <button type="button" class="btn btn-link btn-floating mx-1">
-                              <i class="fab fa-github"></i>
-                          </button>
-                      </div>
-                  </form>
-                </header>
+                  </div>
+          </form>
+          </div>
+      </div>
+  </nav>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
 
