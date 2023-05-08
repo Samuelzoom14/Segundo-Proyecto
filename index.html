@@ -10,7 +10,7 @@
   </head>
   <body>
     <!--=====================================SECTION NAV================================-->  
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand">
           <img src="./img/photo-1593005510329-8a4035a7238f.jpeg" width="50" height="50"
@@ -52,56 +52,8 @@
               <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#login">
                   Iniciar sesion
               </button>
-              <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-outline mb-4">
-                                  <input type="email" id="mail" class="form-control" placeholder="usuario@gmail.com" required/>
-                                  <label class="form-label" for="mail">Usuario</label>
-                                </div>
-                                <div class="form-outline mb-4">
-                                  <input type="password" id="contraseña" class="form-control" required/>
-                                  <label class="form-label" for="contraseña">Contraseña</label>
-                                </div>
-                                <div class="row mb-4">
-                                  <div class="col d-flex justify-content-center">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
-                                      <label class="form-check-label" for="recordarme"> Recordarme </label>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <a href="../Segundo-Proyecto/error404/index.html">Olvidaste la contraseña?</a>
-                                  </div>
-                                </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
-                                </div>
-                                <div class="text-center">
-                                  <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
-                                  <p>o registrate con:</p>
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class="fab fa-google"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class="fab fa-twitter"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-link btn-floating mx-1">
-                                        <i class="fab fa-github"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+            </div>
+          </div>
                 </div>
               </div>
           </form>
@@ -109,7 +61,57 @@
       </div>
     </nav>
     <!--=====================================SECTION IMG ===============================-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+    
+    <header><div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-outline mb-4">
+                        <input type="email" id="mail" class="form-control" placeholder="usuario@gmail.com" required/>
+                        <label class="form-label" for="mail">Usuario</label>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="password" id="contraseña" class="form-control" required/>
+                        <label class="form-label" for="contraseña">Contraseña</label>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
+                            <label class="form-check-label" for="recordarme"> Recordarme </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <a href="../Segundo-Proyecto/error404/index.html">Olvidaste la contraseña?</a>
+                        </div>
+                      </div>
+                      <div class="d-grid">
+                          <button type="submit" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
+                      </div>
+                      <div class="text-center">
+                        <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
+                        <p>o registrate con:</p>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-facebook-f"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-google"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-twitter"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-github"></i>
+                          </button>
+                      </div>
+                  </form>
+                </header>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
 
           <div class="carousel-item active img-fluid">
@@ -170,42 +172,42 @@
       <div class="row justify-content-center">
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
+            <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
+            <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
           </a>  
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/et.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
           </a>
@@ -216,42 +218,42 @@
       <div class="row justify-content-center">
         <div class="col-md-2 col-6 p-3" >
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
           </a>
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </a>  
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
           </a> 
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </a> 
         </div>
         <div class="col-md-2 col-6 p-3">
           <a href="http://"style="text-decoration: none; color:black">
-            <img class="img-fluid" src="/img/descargar.jpeg" alt="Título de la película" />
+            <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
             <h2>Título</h2>
             <p>Lorem ipsum dolor sit, amet consectetur a</p>
           </a>
