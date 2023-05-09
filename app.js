@@ -1,4 +1,4 @@
-/*const nombre = document.getElementById("name")
+const nombre = document.getElementById("name")
 const mail = document.getElementById("mail")
 const password = document.getElementById("password")
 const form = document.getElementById("form")
@@ -29,31 +29,12 @@ form.addEventListener("submit", e=>{
         parrafo.innerHTML = "Enviado"
         window.location = "index.html"
     }
-})*/
+})
 
 
-const loginButton = document.getElementById('login-button');
 
-loginButton.addEventListener('submit', (event) => {
-  event.preventDefault(); 
 
-  const email = document.getElementById('mailModal').value;
-  const password = document.getElementById('passwordModal').value;
+  
+  
 
-  if (isValidEmail(email) && isValidPassword(password)) {
-    window.location.href = "index.html";
-    const adminSection = document.getElementById('adminSection');
-    adminSection.style.display = 'block';
-  } else {
-    console.log("entre")
-    alert('Invalid email or password');
-  }
-});
 
-function isValidEmail(email) {
-  return email === "segundoproyecto@gmail.com";
-}
-
-function isValidPassword(password) {
-  return password === "peliscode";
-}
