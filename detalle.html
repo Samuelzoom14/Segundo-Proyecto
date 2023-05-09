@@ -40,62 +40,64 @@
               <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#login">
                   Inicio de sesion
               </button>
-                  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                  <form>
-                                      <div class="form-outline mb-4">
-                                        <input type="email" id="mailModal" class="form-control" placeholder="usuario@gmail.com" required/>
-                                        <label class="form-label" for="mail">Usuario</label>
-                                      </div>
-                                      <div class="form-outline mb-4">
-                                        <input type="password" id="passwordModal" class="form-control" required/>
-                                        <label class="form-label" for="contraseña">Contraseña</label>
-                                      </div>
-                                      <div class="row mb-4">
-                                        <div class="col d-flex justify-content-center">
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
-                                            <label class="form-check-label" for="recordarme"> Recordarme </label>
-                                          </div>
-                                        </div>
-                                        <div class="col">
-                                          <a href="./error404/index.html">Olvidaste la contraseña?</a>
-                                        </div>
-                                      </div>
-                                      <div class="d-grid">
-                                          <button type="button" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
-                                      </div>    
-                                      <div class="text-center">
-                                        <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
-                                        <p>o registrate con:</p>
-                                          <button type="button" class="btn btn-link btn-floating mx-1">
-                                              <i class="fab fa-facebook-f"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-link btn-floating mx-1">
-                                              <i class="fab fa-google"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-link btn-floating mx-1">
-                                              <i class="fab fa-twitter"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-link btn-floating mx-1">
-                                              <i class="fab fa-github"></i>
-                                          </button>
-                                      </div>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
           </form>
           </div>
       </div>
   </nav>
+  <header>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="loginLabel">Bienvenido</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-outline mb-4">
+                        <input type="email" id="mailModal" class="form-control" placeholder="usuario@gmail.com" required/>
+                        <label class="form-label" for="mail">Usuario</label>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="password" id="passwordModal" class="form-control" required/>
+                        <label class="form-label" for="contraseña">Contraseña</label>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="recordarme" checked />
+                            <label class="form-check-label" for="recordarme"> Recordarme </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <a href="./error404/index.html">Olvidaste la contraseña?</a>
+                        </div>
+                      </div>
+                      <div class="d-grid">
+                          <button type="submit" id="loginButton" class="btn btn-warning btn-block mb-4">Iniciar sesion</button>
+                      </div>    
+                      <div class="text-center">
+                        <p>No eres miembro? <a href="./index2.html" target="_blank">Registrate</a></p>
+                        <p>o registrate con:</p>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-facebook-f"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-google"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-twitter"></i>
+                          </button>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-github"></i>
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </header>
     
     <div class="container-fluid my_container gradient">
         <img src="./img/P_magodeOz.jpeg" class="img-fluid w-100" alt="SIN ESTRENOS">
