@@ -30,6 +30,10 @@
     background-size: cover;
 }
 
+.copy{
+  margin-right: 30px;
+}
+
 #adminSection {
   display: none;
 }
