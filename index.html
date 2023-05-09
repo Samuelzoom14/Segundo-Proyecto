@@ -20,17 +20,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarDark">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="">Peliculas</a>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Peliculas
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#cienciaficcion">Ciencia Ficcion</a></li>
+                <li><a class="dropdown-item" href="#musicales">Musicales</a></li>
+                <li><a class="dropdown-item" href="#terror">Terror</a></li>
+                <li><a class="dropdown-item" href="#comedia">Comedia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Series
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Accion</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Series</a>
+              <a class="nav-link" style="color:white" href="./nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+              <a class="nav-link" style="color:white"  href="./contacto.html">Contacto</a>
             </li>
             <li class="nav-item" id="adminSection">
               <a class="nav-link" href="./crudPelis.html">Modo Administrador</a>
@@ -113,7 +127,7 @@
           </div>
 
           <div class="carousel-item img-fluid">
-            <a href="http://"><img src="/img/hori622.jpg"class="d-block w-100 posicion"style="height: 711px;" alt="..." /></a>
+            <a href="http://"><img src="./img/hori622.jpg"class="d-block w-100 posicion"style="height: 711px;" alt="..." /></a>
             <!--botones ocultos en version phone-->
             <div class="ubiboton displayNone">
               <button class="btn btn-light btn-outline-warning" type="button" style="color:rgb(0, 0, 0)">Reproducir</button>
@@ -123,7 +137,7 @@
           </div>
 
           <div class="carousel-item img-fluid">
-            <a href="http://"><img src="/img/EL-NIÑO-522.jpg"class="d-block w-100 posicion"style="height: 711px;" alt="..." /></a>
+            <a href="http://"><img src="./img/EL-NIÑO-522.jpg"class="d-block w-100 posicion"style="height: 711px;" alt="..." /></a>
             <!--botones ocultos en version phone-->
             <div class="ubiboton displayNone">
               <button class="btn btn-light btn-outline-warning" type="button" style="color:rgb(0, 0, 0)">Reproducir</button>
@@ -155,99 +169,382 @@
     </div>
     <br>
     <!--=====================================SECTION MOVIES================================-->
-    <div class="container fondomovies">
-      <div class="row justify-content-center">
-        <div class="col-md-2 col-6 p-3">
-          <a href="./error404.html"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
-            <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
-            <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
-          </a>  
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/et.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container fondomovies">
-      <div class="row justify-content-center">
-        <div class="col-md-2 col-6 p-3" >
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
-          </a>
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </a>  
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
-          </a> 
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </a> 
-        </div>
-        <div class="col-md-2 col-6 p-3">
-          <a href="http://"style="text-decoration: none; color:black">
-            <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
-            <h2>Título</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur a</p>
-          </a>
+    <h3 id="cienciaficcion" style="display: flex; justify-content: left; padding-left: 5%; padding-top: 20px; padding-bottom: 20px; background-color: #212529; color: white;">Ciencia Ficción</h3>
+      <div class="container fondomovies rounded">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3">
+            <a href="./error404.html"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
+              <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
+              <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="./detalle.html"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/et.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!--=====================================SECTION FOOTER==============================-->  
+      <div class="container fondomovies rounded mb-2">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3" >
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur a</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    <h3 id="musicales"; style="display: flex; justify-content: left; padding-left: 5%; padding-top: 20px; padding-bottom: 20px; background-color: #212529; color: white;">Musicales</h3>
+      <div class="container fondomovies rounded">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3">
+            <a href="./error404.html"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
+              <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
+              <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/et.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container fondomovies rounded mb-2">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3" >
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur a</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <h3 id="terror" style="display: flex; justify-content: left; padding-left: 5%; padding-top: 20px; padding-bottom: 20px; background-color: #212529; color: white;">Terror</h3>
+      <div class="container fondomovies rounded">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3">
+            <a href="./error404.html"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
+              <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
+              <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/et.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container fondomovies rounded mb-2">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3" >
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur a</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <h3 id="comedia"; style="display: flex; justify-content: left; padding-left: 5%; padding-top: 20px; padding-bottom: 20px; background-color: #212529; color: white;">Comedia</h3>
+      <div class="container fondomovies rounded">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3">
+            <a href="./error404.html"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/lamilla.jpg" alt="Título de la película" />
+              <h5 class="my-2"> <strong> La Milla Verde </strong></h5>
+              <p>  es una película de 1999 cuya trama trata de una cárcel en la década de los 30</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/avatar.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi?</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/godzilla.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/terminator.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minus.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/et.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/voler-futuro.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, et?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container fondomovies rounded mb-2">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-6 p-3" >
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/elamordesp.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore nihil.</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/queen.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/pinkfloyd.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </a>  
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/abba.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, corrupti.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/High-school-musical.jpeg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </a> 
+          </div>
+          <div class="col-md-2 col-6 p-3">
+            <a href="http://"style="text-decoration: none; color:black">
+              <img class="movies" src="./img/escuelarock.jpg" alt="Título de la película" />
+              <h2>Título</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur a</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--=====================================SECTION FOOTER==============================-->  
     <footer style="background-color: #212529">
       <ul class="nav nav-pills nav-fill container-fluid p-3 columna">
         <li class="nav-item ">
