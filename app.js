@@ -14,7 +14,7 @@ modal.addEventListener("submit", e => {
     localStorage.setItem('isAdmin', 'true');
     window.location.href = "crudPelis.html";
   } else {
-    alert("no coincide");
+    alert("Usuario Invalido");
   }
 });
 

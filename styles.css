@@ -8,13 +8,7 @@
   object-fit: contain;
   mix-blend-mode: color-dodge;
 }
-/* .fondoindex{
-  background-image: url(./img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-} */
+
 body{background-color: #515150;}
 
 .fondomovies{
