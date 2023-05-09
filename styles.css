@@ -31,6 +31,10 @@ body{background-color: #515150;}
     background-size: cover;
 }
 
+.copy{
+  margin-right: 30px;
+}
+
 #adminSection {
   display: none;
 }
