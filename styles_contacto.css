@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+
 #adminSection {
     display: none;
+  }
+
+  .LogoPelisCode {
+    object-fit: contain;
+    mix-blend-mode: color-dodge;
   }
 
 body {

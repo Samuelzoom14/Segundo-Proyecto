@@ -4,9 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-.LogoPeliculas {
-    object-fit: contain;
-    mix-blend-mode: color-dodge;
+.LogoPelisCode {
+  object-fit: contain;
+  mix-blend-mode: color-dodge;
 }
 .fondoindex{
   background-image: url(./img/fondo.jpg);

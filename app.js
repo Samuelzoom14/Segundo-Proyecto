@@ -12,7 +12,7 @@ modal.addEventListener("submit", e => {
     adminSection.style.display = 'block';
     inicioSesion.textContent = 'Administrador';
     localStorage.setItem('isAdmin', 'true');
-    window.location.href = "index.html";
+    window.location.href = "crudPelis.html";
   } else {
     alert("no coincide");
   }
