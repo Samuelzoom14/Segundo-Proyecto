@@ -27,8 +27,9 @@ document.getElementById('form_add').addEventListener("submit", function(event){
   document.getElementById("descripcion").value = "";
 
   renderList()
-
 }); 
+
+let highlightedRow = null;
 
 function renderList() {
   let movieList = JSON.parse(localStorage.getItem("ls_lista")) || [];
@@ -98,10 +99,10 @@ function renderList() {
 
       let tdActions = document.createElement("td");
       tr.appendChild(tdActions);
-        
+      //////BOTONES////////////////////////////////////////////////////// 
       let btnEdit = document.createElement("button");
       btnEdit.textContent = "Modificar";
-      btnEdit.classList.add("btn", "btn-secondary", "edit-button");
+      btnEdit.classList.add("btn", "btn-primary");
 
       btnEdit.addEventListener("click", function () {
         document.getElementById("codigo").value = movie.code;
@@ -109,7 +110,7 @@ function renderList() {
         document.getElementById("categoria").value = movie.category;
         document.getElementById("descripcion").value = movie.description;
         document.getElementById("publicado").value = movie.publish;
-
+      
         let index = movieList.indexOf(movie);
         if (index > -1) {
           movieList.splice(index, 1);
@@ -134,9 +135,35 @@ function renderList() {
         }
       });
       tdActions.appendChild(btnDelete);  
-    }
-}
 
-let editButtons = document.querySelectorAll(".edit-button");
+      let btnFav = document.createElement("button");
+      btnFav.textContent = "Favorita";
+      btnFav.classList.add("btn", "btn-warning", "favorite-button");
+      tdActions.appendChild(btnFav);
+
+      let favButtons = document.querySelectorAll('.favorite-button');
+      favButtons.forEach(btnFav => {
+        btnFav.addEventListener('click', function(pepe){
+          let row = pepe.target.closest('tr');
+          let codigo = row.querySelector('td:first-child').textContent;
+
+          if (highlightedRow === row) {
+            highlightedRow.classList.remove('bg-warning');
+            highlightedRow = null;
+          } else {
+
+            if (highlightedRow) {
+              highlightedRow.classList.remove('bg-warning');
+            }
+
+            row.classList.add('bg-warning');
+            highlightedRow = row;
+          }
+          console.log("Esta destacada la fila: " + codigo)
+        })
+      });
+    
+    };        
+}
 
 renderList();
